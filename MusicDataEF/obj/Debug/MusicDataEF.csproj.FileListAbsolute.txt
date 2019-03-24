@@ -1,0 +1,13 @@
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\MusicDataEF.dll.config
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\MusicDataEF.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\MusicDataEF.pdb
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\obj\Debug\MusicDataEF.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\obj\Debug\MusicDataEF.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\obj\Debug\MusicDataEF.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\obj\Debug\MusicDataEF.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDataEF\obj\Debug\MusicDataEF.pdb

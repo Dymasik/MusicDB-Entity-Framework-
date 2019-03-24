@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DBMusicModelContainer" CdmEntityContainer="DBMusicEntities">
+    <EntitySetMapping Name="Albums">
+      <EntityTypeMapping TypeName="DBMusicModel.Albums">
+        <MappingFragment StoreEntitySet="Albums">
+          <ScalarProperty Name="AL_id" ColumnName="AL_id" />
+          <ScalarProperty Name="AL_name" ColumnName="AL_name" />
+          <ScalarProperty Name="AL_date" ColumnName="AL_date" />
+          <ScalarProperty Name="AL_artId" ColumnName="AL_artId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtistPlayer">
+      <EntityTypeMapping TypeName="DBMusicModel.ArtistPlayer">
+        <MappingFragment StoreEntitySet="ArtistPlayer">
+          <ScalarProperty Name="AP_id" ColumnName="AP_id" />
+          <ScalarProperty Name="AP_artId" ColumnName="AP_artId" />
+          <ScalarProperty Name="Ap_playerId" ColumnName="Ap_playerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Artists">
+      <EntityTypeMapping TypeName="DBMusicModel.Artists">
+        <MappingFragment StoreEntitySet="Artists">
+          <ScalarProperty Name="A_id" ColumnName="A_id" />
+          <ScalarProperty Name="A_countryId" ColumnName="A_countryId" />
+          <ScalarProperty Name="A_name" ColumnName="A_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="DBMusicModel.Countries">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="C_id" ColumnName="C_id" />
+          <ScalarProperty Name="C_name" ColumnName="C_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ganres">
+      <EntityTypeMapping TypeName="DBMusicModel.Ganres">
+        <MappingFragment StoreEntitySet="Ganres">
+          <ScalarProperty Name="G_id" ColumnName="G_id" />
+          <ScalarProperty Name="G_name" ColumnName="G_name" />
+          <ScalarProperty Name="G_info" ColumnName="G_info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusicPlayers">
+      <EntityTypeMapping TypeName="DBMusicModel.MusicPlayers">
+        <MappingFragment StoreEntitySet="MusicPlayers">
+          <ScalarProperty Name="MP_id" ColumnName="MP_id" />
+          <ScalarProperty Name="MP_name" ColumnName="MP_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SongGanre">
+      <EntityTypeMapping TypeName="DBMusicModel.SongGanre">
+        <MappingFragment StoreEntitySet="SongGanre">
+          <ScalarProperty Name="SG_id" ColumnName="SG_id" />
+          <ScalarProperty Name="SG_songId" ColumnName="SG_songId" />
+          <ScalarProperty Name="SG_ganreId" ColumnName="SG_ganreId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Songs">
+      <EntityTypeMapping TypeName="DBMusicModel.Songs">
+        <MappingFragment StoreEntitySet="Songs">
+          <ScalarProperty Name="S_id" ColumnName="S_id" />
+          <ScalarProperty Name="S_name" ColumnName="S_name" />
+          <ScalarProperty Name="S_length" ColumnName="S_length" />
+          <ScalarProperty Name="S_albId" ColumnName="S_albId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

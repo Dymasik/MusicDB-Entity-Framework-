@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicDB(withEF)", "MusicDB(withEF)\MusicDB(withEF).csproj", "{39B4426B-249A-4557-9183-A475EF718CCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicDataEF", "MusicDataEF\MusicDataEF.csproj", "{5EB86B5E-F246-411B-8ED4-AEF4AE6C4524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39B4426B-249A-4557-9183-A475EF718CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B4426B-249A-4557-9183-A475EF718CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B4426B-249A-4557-9183-A475EF718CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B4426B-249A-4557-9183-A475EF718CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB86B5E-F246-411B-8ED4-AEF4AE6C4524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB86B5E-F246-411B-8ED4-AEF4AE6C4524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB86B5E-F246-411B-8ED4-AEF4AE6C4524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB86B5E-F246-411B-8ED4-AEF4AE6C4524}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AB8FC20-8E12-4C9C-ACBB-45E45FB623A9}
+	EndGlobalSection
+EndGlobal

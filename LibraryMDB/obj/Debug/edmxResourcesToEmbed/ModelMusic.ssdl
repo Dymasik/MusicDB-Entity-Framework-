@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище DBMusicModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Albums">
+    <Key>
+      <PropertyRef Name="AL_id" />
+    </Key>
+    <Property Name="AL_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AL_name" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="AL_date" Type="date" />
+    <Property Name="AL_artId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArtistPlayer">
+    <Key>
+      <PropertyRef Name="AP_id" />
+    </Key>
+    <Property Name="AP_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AP_artId" Type="int" Nullable="false" />
+    <Property Name="Ap_playerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Artists">
+    <Key>
+      <PropertyRef Name="A_id" />
+    </Key>
+    <Property Name="A_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="A_countryId" Type="int" Nullable="false" />
+    <Property Name="A_name" Type="nchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="C_id" />
+    </Key>
+    <Property Name="C_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="C_name" Type="nchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ganres">
+    <Key>
+      <PropertyRef Name="G_id" />
+    </Key>
+    <Property Name="G_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="G_name" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="G_info" Type="nchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MusicPlayers">
+    <Key>
+      <PropertyRef Name="MP_id" />
+    </Key>
+    <Property Name="MP_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MP_name" Type="nchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SongGanre">
+    <Key>
+      <PropertyRef Name="SG_id" />
+    </Key>
+    <Property Name="SG_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SG_songId" Type="int" Nullable="false" />
+    <Property Name="SG_ganreId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Songs">
+    <Key>
+      <PropertyRef Name="S_id" />
+    </Key>
+    <Property Name="S_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="S_name" Type="nchar" MaxLength="100" Nullable="false" />
+    <Property Name="S_length" Type="int" />
+    <Property Name="S_albId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Albums_Artists">
+    <End Role="Artists" Type="Self.Artists" Multiplicity="1" />
+    <End Role="Albums" Type="Self.Albums" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artists">
+        <PropertyRef Name="A_id" />
+      </Principal>
+      <Dependent Role="Albums">
+        <PropertyRef Name="AL_artId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArtistPlayer_Artists">
+    <End Role="Artists" Type="Self.Artists" Multiplicity="1" />
+    <End Role="ArtistPlayer" Type="Self.ArtistPlayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artists">
+        <PropertyRef Name="A_id" />
+      </Principal>
+      <Dependent Role="ArtistPlayer">
+        <PropertyRef Name="AP_artId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArtistPlayer_MusicPlayers">
+    <End Role="MusicPlayers" Type="Self.MusicPlayers" Multiplicity="1" />
+    <End Role="ArtistPlayer" Type="Self.ArtistPlayer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MusicPlayers">
+        <PropertyRef Name="MP_id" />
+      </Principal>
+      <Dependent Role="ArtistPlayer">
+        <PropertyRef Name="Ap_playerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Artists_Countries">
+    <End Role="Countries" Type="Self.Countries" Multiplicity="1" />
+    <End Role="Artists" Type="Self.Artists" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="C_id" />
+      </Principal>
+      <Dependent Role="Artists">
+        <PropertyRef Name="A_countryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SongGanre_Ganres">
+    <End Role="Ganres" Type="Self.Ganres" Multiplicity="1" />
+    <End Role="SongGanre" Type="Self.SongGanre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ganres">
+        <PropertyRef Name="G_id" />
+      </Principal>
+      <Dependent Role="SongGanre">
+        <PropertyRef Name="SG_ganreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SongGanre_Songs">
+    <End Role="Songs" Type="Self.Songs" Multiplicity="1" />
+    <End Role="SongGanre" Type="Self.SongGanre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Songs">
+        <PropertyRef Name="S_id" />
+      </Principal>
+      <Dependent Role="SongGanre">
+        <PropertyRef Name="SG_songId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Songs_Albums">
+    <End Role="Albums" Type="Self.Albums" Multiplicity="1" />
+    <End Role="Songs" Type="Self.Songs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Albums">
+        <PropertyRef Name="AL_id" />
+      </Principal>
+      <Dependent Role="Songs">
+        <PropertyRef Name="S_albId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище DBMusicModelContainer">
+    <EntitySet Name="Albums" EntityType="Self.Albums" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ArtistPlayer" EntityType="Self.ArtistPlayer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Artists" EntityType="Self.Artists" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ganres" EntityType="Self.Ganres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusicPlayers" EntityType="Self.MusicPlayers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SongGanre" EntityType="Self.SongGanre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Songs" EntityType="Self.Songs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Albums_Artists" Association="Self.FK_Albums_Artists">
+      <End Role="Artists" EntitySet="Artists" />
+      <End Role="Albums" EntitySet="Albums" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArtistPlayer_Artists" Association="Self.FK_ArtistPlayer_Artists">
+      <End Role="Artists" EntitySet="Artists" />
+      <End Role="ArtistPlayer" EntitySet="ArtistPlayer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArtistPlayer_MusicPlayers" Association="Self.FK_ArtistPlayer_MusicPlayers">
+      <End Role="MusicPlayers" EntitySet="MusicPlayers" />
+      <End Role="ArtistPlayer" EntitySet="ArtistPlayer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Artists_Countries" Association="Self.FK_Artists_Countries">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Artists" EntitySet="Artists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SongGanre_Ganres" Association="Self.FK_SongGanre_Ganres">
+      <End Role="Ganres" EntitySet="Ganres" />
+      <End Role="SongGanre" EntitySet="SongGanre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SongGanre_Songs" Association="Self.FK_SongGanre_Songs">
+      <End Role="Songs" EntitySet="Songs" />
+      <End Role="SongGanre" EntitySet="SongGanre" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Songs_Albums" Association="Self.FK_Songs_Albums">
+      <End Role="Albums" EntitySet="Albums" />
+      <End Role="Songs" EntitySet="Songs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

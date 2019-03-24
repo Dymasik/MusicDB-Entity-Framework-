@@ -1,0 +1,13 @@
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\LibraryMDB.dll.config
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\LibraryMDB.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\LibraryMDB.pdb
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\obj\Debug\LibraryMDB.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\obj\Debug\LibraryMDB.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\obj\Debug\LibraryMDB.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\obj\Debug\LibraryMDB.dll
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\LibraryMDB\obj\Debug\LibraryMDB.pdb
