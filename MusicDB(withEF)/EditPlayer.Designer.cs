@@ -150,7 +150,7 @@
             this.aPartIdDataGridViewTextBoxColumn.DataPropertyName = "AP_artId";
             this.aPartIdDataGridViewTextBoxColumn.DataSource = this.artistsBindingSource;
             this.aPartIdDataGridViewTextBoxColumn.DisplayMember = "A_name";
-            this.aPartIdDataGridViewTextBoxColumn.HeaderText = "AP_artId";
+            this.aPartIdDataGridViewTextBoxColumn.HeaderText = "Artist";
             this.aPartIdDataGridViewTextBoxColumn.Name = "aPartIdDataGridViewTextBoxColumn";
             this.aPartIdDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.aPartIdDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;

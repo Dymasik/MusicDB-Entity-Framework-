@@ -116,5 +116,132 @@ namespace MusicDB_withEF_
             frm.Dispose();
             ctx.MusicPlayers.Load();
         }
+
+        private void bSArtists_Click(object sender, EventArgs e)
+        {
+            ctx.SaveChanges();
+        }
+
+        private void bDArtists_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Artists artist = (Artists)dGVArtists.CurrentRow.DataBoundItem;
+                var a_count = (from a in ctx.Albums
+                               where a.AL_artId == artist.A_id
+                               select a).Count();
+                if (a_count > 0)
+                {
+                    MessageBox.Show("Impossible to delete, artist has albums", "Warning");
+                }
+                else
+                {
+                    artistsBindingSource.RemoveCurrent();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error of deleting", "Error");
+            }
+        }
+
+        private void dGVArtists_DataError(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+
+        }
+
+        private void dGVAlbums_DataError(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+
+        }
+
+        private void dGVSongs_DataError(object sender, DataGridViewDataErrorEventArgs anError)
+        {
+
+        }
+
+        private void bSAlbums_Click(object sender, EventArgs e)
+        {
+            ctx.SaveChanges();
+        }
+
+        private void bDAlbums_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Albums album = (Albums)dGVAlbums.CurrentRow.DataBoundItem;
+                var al_count = (from a in ctx.Songs
+                               where a.S_albId == album.AL_id
+                               select a).Count();
+                if (al_count > 0)
+                {
+                    MessageBox.Show("Impossible to delete, album has songs", "Warning");
+                }
+                else
+                {
+                    albumsBindingSource.RemoveCurrent();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error of deleting", "Error");
+            }
+        }
+
+        private void bSGanres_Click(object sender, EventArgs e)
+        {
+            ctx.SaveChanges();
+        }
+
+        private void bDGanres_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Ganres ganre = (Ganres)dGVGanres.CurrentRow.DataBoundItem;
+                var g_count = (from g in ctx.SongGanre
+                                where g.SG_ganreId == ganre.G_id
+                                select g).Count();
+                if (g_count > 0)
+                {
+                    MessageBox.Show("Impossible to delete, ganre has songs", "Warning");
+                }
+                else
+                {
+                    ganresBindingSource.RemoveCurrent();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error of deleting information", "Error");
+            }
+        }
+
+        private void bSCountries_Click(object sender, EventArgs e)
+        {
+            ctx.SaveChanges();
+        }
+
+        private void bDCountries_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Countries country = (Countries)dGVCountries.CurrentRow.DataBoundItem;
+                var c_count = (from c in ctx.Artists
+                               where c.A_countryId == country.C_id
+                               select c).Count();
+                if (c_count > 0)
+                {
+                    MessageBox.Show("Impossible to delete, country has artists", "Warning");
+                }
+                else
+                {
+                    countriesBindingSource.RemoveCurrent();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error of deleting information", "Error");
+            }
+        }
     }
 }

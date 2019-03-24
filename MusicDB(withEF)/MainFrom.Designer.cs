@@ -36,19 +36,11 @@
             this.bDPlayers = new System.Windows.Forms.Button();
             this.bSPlayers = new System.Windows.Forms.Button();
             this.dGVPlayers = new System.Windows.Forms.DataGridView();
-            this.tBArtists = new System.Windows.Forms.TabPage();
-            this.dGVArtists = new System.Windows.Forms.DataGridView();
-            this.tBAlbums = new System.Windows.Forms.TabPage();
-            this.dGVAlbums = new System.Windows.Forms.DataGridView();
-            this.tBSongs = new System.Windows.Forms.TabPage();
-            this.dGVSongs = new System.Windows.Forms.DataGridView();
-            this.tBGanres = new System.Windows.Forms.TabPage();
-            this.dGVGanres = new System.Windows.Forms.DataGridView();
-            this.tBCountries = new System.Windows.Forms.TabPage();
-            this.dGVCountries = new System.Windows.Forms.DataGridView();
             this.mPidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mPnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.musicPlayerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tBArtists = new System.Windows.Forms.TabPage();
+            this.dGVArtists = new System.Windows.Forms.DataGridView();
             this.aidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.anameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.acountryIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -57,6 +49,10 @@
             this.artistPlayerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countriesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.artistsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bDArtists = new System.Windows.Forms.Button();
+            this.bSArtists = new System.Windows.Forms.Button();
+            this.tBAlbums = new System.Windows.Forms.TabPage();
+            this.dGVAlbums = new System.Windows.Forms.DataGridView();
             this.aLidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aLnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aLdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +60,8 @@
             this.artistsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.songsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.albumsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tBSongs = new System.Windows.Forms.TabPage();
+            this.dGVSongs = new System.Windows.Forms.DataGridView();
             this.sidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.snameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.slengthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,33 +69,43 @@
             this.albumsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.songGanreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.songsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tBGanres = new System.Windows.Forms.TabPage();
+            this.dGVGanres = new System.Windows.Forms.DataGridView();
             this.gidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ginfoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.songGanreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ganresBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tBCountries = new System.Windows.Forms.TabPage();
+            this.dGVCountries = new System.Windows.Forms.DataGridView();
             this.cidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.artistsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bSAlbums = new System.Windows.Forms.Button();
+            this.bDAlbums = new System.Windows.Forms.Button();
+            this.bSGanres = new System.Windows.Forms.Button();
+            this.bDGanres = new System.Windows.Forms.Button();
+            this.bSCountries = new System.Windows.Forms.Button();
+            this.bDCountries = new System.Windows.Forms.Button();
             this.tCMain.SuspendLayout();
             this.tBPlayers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVPlayers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPlayerBindingSource)).BeginInit();
             this.tBArtists.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVArtists)).BeginInit();
-            this.tBAlbums.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVAlbums)).BeginInit();
-            this.tBSongs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVSongs)).BeginInit();
-            this.tBGanres.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVGanres)).BeginInit();
-            this.tBCountries.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVCountries)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicPlayerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.artistsBindingSource)).BeginInit();
+            this.tBAlbums.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVAlbums)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumsBindingSource)).BeginInit();
+            this.tBSongs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVSongs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.songsBindingSource)).BeginInit();
+            this.tBGanres.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVGanres)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ganresBindingSource)).BeginInit();
+            this.tBCountries.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVCountries)).BeginInit();
             this.SuspendLayout();
             // 
             // tCMain
@@ -189,9 +197,28 @@
             this.dGVPlayers.Size = new System.Drawing.Size(540, 332);
             this.dGVPlayers.TabIndex = 0;
             // 
+            // mPidDataGridViewTextBoxColumn
+            // 
+            this.mPidDataGridViewTextBoxColumn.DataPropertyName = "MP_id";
+            this.mPidDataGridViewTextBoxColumn.HeaderText = "MP_id";
+            this.mPidDataGridViewTextBoxColumn.Name = "mPidDataGridViewTextBoxColumn";
+            this.mPidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // mPnameDataGridViewTextBoxColumn
+            // 
+            this.mPnameDataGridViewTextBoxColumn.DataPropertyName = "MP_name";
+            this.mPnameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.mPnameDataGridViewTextBoxColumn.Name = "mPnameDataGridViewTextBoxColumn";
+            // 
+            // musicPlayerBindingSource
+            // 
+            this.musicPlayerBindingSource.DataSource = typeof(MusicDataEF.MusicPlayers);
+            // 
             // tBArtists
             // 
             this.tBArtists.Controls.Add(this.dGVArtists);
+            this.tBArtists.Controls.Add(this.bDArtists);
+            this.tBArtists.Controls.Add(this.bSArtists);
             this.tBArtists.Location = new System.Drawing.Point(4, 22);
             this.tBArtists.Name = "tBArtists";
             this.tBArtists.Padding = new System.Windows.Forms.Padding(3);
@@ -216,146 +243,11 @@
             this.artistPlayerDataGridViewTextBoxColumn,
             this.countriesDataGridViewTextBoxColumn});
             this.dGVArtists.DataSource = this.artistsBindingSource;
-            this.dGVArtists.Location = new System.Drawing.Point(6, 120);
+            this.dGVArtists.Location = new System.Drawing.Point(6, 106);
             this.dGVArtists.Name = "dGVArtists";
-            this.dGVArtists.Size = new System.Drawing.Size(540, 280);
-            this.dGVArtists.TabIndex = 0;
-            // 
-            // tBAlbums
-            // 
-            this.tBAlbums.Controls.Add(this.dGVAlbums);
-            this.tBAlbums.Location = new System.Drawing.Point(4, 22);
-            this.tBAlbums.Name = "tBAlbums";
-            this.tBAlbums.Size = new System.Drawing.Size(552, 406);
-            this.tBAlbums.TabIndex = 2;
-            this.tBAlbums.Text = "Albums";
-            this.tBAlbums.UseVisualStyleBackColor = true;
-            // 
-            // dGVAlbums
-            // 
-            this.dGVAlbums.AllowUserToOrderColumns = true;
-            this.dGVAlbums.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dGVAlbums.AutoGenerateColumns = false;
-            this.dGVAlbums.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVAlbums.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.aLidDataGridViewTextBoxColumn,
-            this.aLnameDataGridViewTextBoxColumn,
-            this.aLdateDataGridViewTextBoxColumn,
-            this.aLartIdDataGridViewTextBoxColumn,
-            this.artistsDataGridViewTextBoxColumn,
-            this.songsDataGridViewTextBoxColumn});
-            this.dGVAlbums.DataSource = this.albumsBindingSource;
-            this.dGVAlbums.Location = new System.Drawing.Point(3, 107);
-            this.dGVAlbums.Name = "dGVAlbums";
-            this.dGVAlbums.Size = new System.Drawing.Size(546, 296);
-            this.dGVAlbums.TabIndex = 0;
-            // 
-            // tBSongs
-            // 
-            this.tBSongs.Controls.Add(this.dGVSongs);
-            this.tBSongs.Location = new System.Drawing.Point(4, 22);
-            this.tBSongs.Name = "tBSongs";
-            this.tBSongs.Size = new System.Drawing.Size(552, 406);
-            this.tBSongs.TabIndex = 3;
-            this.tBSongs.Text = "Songs";
-            this.tBSongs.UseVisualStyleBackColor = true;
-            // 
-            // dGVSongs
-            // 
-            this.dGVSongs.AllowUserToOrderColumns = true;
-            this.dGVSongs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dGVSongs.AutoGenerateColumns = false;
-            this.dGVSongs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVSongs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.sidDataGridViewTextBoxColumn,
-            this.snameDataGridViewTextBoxColumn,
-            this.slengthDataGridViewTextBoxColumn,
-            this.salbIdDataGridViewTextBoxColumn,
-            this.albumsDataGridViewTextBoxColumn1,
-            this.songGanreDataGridViewTextBoxColumn});
-            this.dGVSongs.DataSource = this.songsBindingSource;
-            this.dGVSongs.Location = new System.Drawing.Point(3, 105);
-            this.dGVSongs.Name = "dGVSongs";
-            this.dGVSongs.Size = new System.Drawing.Size(546, 298);
-            this.dGVSongs.TabIndex = 0;
-            // 
-            // tBGanres
-            // 
-            this.tBGanres.Controls.Add(this.dGVGanres);
-            this.tBGanres.Location = new System.Drawing.Point(4, 22);
-            this.tBGanres.Name = "tBGanres";
-            this.tBGanres.Size = new System.Drawing.Size(552, 406);
-            this.tBGanres.TabIndex = 4;
-            this.tBGanres.Text = "Ganres";
-            this.tBGanres.UseVisualStyleBackColor = true;
-            // 
-            // dGVGanres
-            // 
-            this.dGVGanres.AllowUserToOrderColumns = true;
-            this.dGVGanres.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dGVGanres.AutoGenerateColumns = false;
-            this.dGVGanres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVGanres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.gidDataGridViewTextBoxColumn,
-            this.gnameDataGridViewTextBoxColumn,
-            this.ginfoDataGridViewTextBoxColumn,
-            this.songGanreDataGridViewTextBoxColumn1});
-            this.dGVGanres.DataSource = this.ganresBindingSource;
-            this.dGVGanres.Location = new System.Drawing.Point(3, 93);
-            this.dGVGanres.Name = "dGVGanres";
-            this.dGVGanres.Size = new System.Drawing.Size(546, 310);
-            this.dGVGanres.TabIndex = 0;
-            // 
-            // tBCountries
-            // 
-            this.tBCountries.Controls.Add(this.dGVCountries);
-            this.tBCountries.Location = new System.Drawing.Point(4, 22);
-            this.tBCountries.Name = "tBCountries";
-            this.tBCountries.Size = new System.Drawing.Size(552, 406);
-            this.tBCountries.TabIndex = 5;
-            this.tBCountries.Text = "Countries";
-            this.tBCountries.UseVisualStyleBackColor = true;
-            // 
-            // dGVCountries
-            // 
-            this.dGVCountries.AllowUserToOrderColumns = true;
-            this.dGVCountries.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dGVCountries.AutoGenerateColumns = false;
-            this.dGVCountries.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVCountries.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.cidDataGridViewTextBoxColumn,
-            this.cnameDataGridViewTextBoxColumn,
-            this.artistsDataGridViewTextBoxColumn1});
-            this.dGVCountries.DataSource = this.countriesBindingSource;
-            this.dGVCountries.Location = new System.Drawing.Point(3, 92);
-            this.dGVCountries.Name = "dGVCountries";
-            this.dGVCountries.Size = new System.Drawing.Size(546, 311);
-            this.dGVCountries.TabIndex = 0;
-            // 
-            // mPidDataGridViewTextBoxColumn
-            // 
-            this.mPidDataGridViewTextBoxColumn.DataPropertyName = "MP_id";
-            this.mPidDataGridViewTextBoxColumn.HeaderText = "MP_id";
-            this.mPidDataGridViewTextBoxColumn.Name = "mPidDataGridViewTextBoxColumn";
-            this.mPidDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // mPnameDataGridViewTextBoxColumn
-            // 
-            this.mPnameDataGridViewTextBoxColumn.DataPropertyName = "MP_name";
-            this.mPnameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.mPnameDataGridViewTextBoxColumn.Name = "mPnameDataGridViewTextBoxColumn";
-            // 
-            // musicPlayerBindingSource
-            // 
-            this.musicPlayerBindingSource.DataSource = typeof(MusicDataEF.MusicPlayers);
+            this.dGVArtists.Size = new System.Drawing.Size(540, 294);
+            this.dGVArtists.TabIndex = 3;
+            this.dGVArtists.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dGVArtists_DataError);
             // 
             // aidDataGridViewTextBoxColumn
             // 
@@ -372,6 +264,7 @@
             // 
             // acountryIdDataGridViewTextBoxColumn
             // 
+            this.acountryIdDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.acountryIdDataGridViewTextBoxColumn.DataPropertyName = "A_countryId";
             this.acountryIdDataGridViewTextBoxColumn.DataSource = this.countriesBindingSource;
             this.acountryIdDataGridViewTextBoxColumn.DisplayMember = "C_name";
@@ -409,6 +302,60 @@
             // artistsBindingSource
             // 
             this.artistsBindingSource.DataSource = typeof(MusicDataEF.Artists);
+            // 
+            // bDArtists
+            // 
+            this.bDArtists.Location = new System.Drawing.Point(87, 51);
+            this.bDArtists.Name = "bDArtists";
+            this.bDArtists.Size = new System.Drawing.Size(75, 23);
+            this.bDArtists.TabIndex = 2;
+            this.bDArtists.Text = "Delete";
+            this.bDArtists.UseVisualStyleBackColor = true;
+            this.bDArtists.Click += new System.EventHandler(this.bDArtists_Click);
+            // 
+            // bSArtists
+            // 
+            this.bSArtists.Location = new System.Drawing.Point(6, 51);
+            this.bSArtists.Name = "bSArtists";
+            this.bSArtists.Size = new System.Drawing.Size(75, 23);
+            this.bSArtists.TabIndex = 1;
+            this.bSArtists.Text = "Save";
+            this.bSArtists.UseVisualStyleBackColor = true;
+            this.bSArtists.Click += new System.EventHandler(this.bSArtists_Click);
+            // 
+            // tBAlbums
+            // 
+            this.tBAlbums.Controls.Add(this.bDAlbums);
+            this.tBAlbums.Controls.Add(this.bSAlbums);
+            this.tBAlbums.Controls.Add(this.dGVAlbums);
+            this.tBAlbums.Location = new System.Drawing.Point(4, 22);
+            this.tBAlbums.Name = "tBAlbums";
+            this.tBAlbums.Size = new System.Drawing.Size(552, 406);
+            this.tBAlbums.TabIndex = 2;
+            this.tBAlbums.Text = "Albums";
+            this.tBAlbums.UseVisualStyleBackColor = true;
+            // 
+            // dGVAlbums
+            // 
+            this.dGVAlbums.AllowUserToOrderColumns = true;
+            this.dGVAlbums.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVAlbums.AutoGenerateColumns = false;
+            this.dGVAlbums.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVAlbums.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.aLidDataGridViewTextBoxColumn,
+            this.aLnameDataGridViewTextBoxColumn,
+            this.aLdateDataGridViewTextBoxColumn,
+            this.aLartIdDataGridViewTextBoxColumn,
+            this.artistsDataGridViewTextBoxColumn,
+            this.songsDataGridViewTextBoxColumn});
+            this.dGVAlbums.DataSource = this.albumsBindingSource;
+            this.dGVAlbums.Location = new System.Drawing.Point(3, 107);
+            this.dGVAlbums.Name = "dGVAlbums";
+            this.dGVAlbums.Size = new System.Drawing.Size(546, 296);
+            this.dGVAlbums.TabIndex = 0;
+            this.dGVAlbums.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dGVAlbums_DataError);
             // 
             // aLidDataGridViewTextBoxColumn
             // 
@@ -458,6 +405,38 @@
             // 
             this.albumsBindingSource.DataSource = typeof(MusicDataEF.Albums);
             // 
+            // tBSongs
+            // 
+            this.tBSongs.Controls.Add(this.dGVSongs);
+            this.tBSongs.Location = new System.Drawing.Point(4, 22);
+            this.tBSongs.Name = "tBSongs";
+            this.tBSongs.Size = new System.Drawing.Size(552, 406);
+            this.tBSongs.TabIndex = 3;
+            this.tBSongs.Text = "Songs";
+            this.tBSongs.UseVisualStyleBackColor = true;
+            // 
+            // dGVSongs
+            // 
+            this.dGVSongs.AllowUserToOrderColumns = true;
+            this.dGVSongs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVSongs.AutoGenerateColumns = false;
+            this.dGVSongs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVSongs.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sidDataGridViewTextBoxColumn,
+            this.snameDataGridViewTextBoxColumn,
+            this.slengthDataGridViewTextBoxColumn,
+            this.salbIdDataGridViewTextBoxColumn,
+            this.albumsDataGridViewTextBoxColumn1,
+            this.songGanreDataGridViewTextBoxColumn});
+            this.dGVSongs.DataSource = this.songsBindingSource;
+            this.dGVSongs.Location = new System.Drawing.Point(3, 105);
+            this.dGVSongs.Name = "dGVSongs";
+            this.dGVSongs.Size = new System.Drawing.Size(546, 298);
+            this.dGVSongs.TabIndex = 0;
+            this.dGVSongs.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dGVSongs_DataError);
+            // 
             // sidDataGridViewTextBoxColumn
             // 
             this.sidDataGridViewTextBoxColumn.DataPropertyName = "S_id";
@@ -506,6 +485,37 @@
             // 
             this.songsBindingSource.DataSource = typeof(MusicDataEF.Songs);
             // 
+            // tBGanres
+            // 
+            this.tBGanres.Controls.Add(this.bDGanres);
+            this.tBGanres.Controls.Add(this.bSGanres);
+            this.tBGanres.Controls.Add(this.dGVGanres);
+            this.tBGanres.Location = new System.Drawing.Point(4, 22);
+            this.tBGanres.Name = "tBGanres";
+            this.tBGanres.Size = new System.Drawing.Size(552, 406);
+            this.tBGanres.TabIndex = 4;
+            this.tBGanres.Text = "Ganres";
+            this.tBGanres.UseVisualStyleBackColor = true;
+            // 
+            // dGVGanres
+            // 
+            this.dGVGanres.AllowUserToOrderColumns = true;
+            this.dGVGanres.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVGanres.AutoGenerateColumns = false;
+            this.dGVGanres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVGanres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gidDataGridViewTextBoxColumn,
+            this.gnameDataGridViewTextBoxColumn,
+            this.ginfoDataGridViewTextBoxColumn,
+            this.songGanreDataGridViewTextBoxColumn1});
+            this.dGVGanres.DataSource = this.ganresBindingSource;
+            this.dGVGanres.Location = new System.Drawing.Point(3, 93);
+            this.dGVGanres.Name = "dGVGanres";
+            this.dGVGanres.Size = new System.Drawing.Size(546, 310);
+            this.dGVGanres.TabIndex = 0;
+            // 
             // gidDataGridViewTextBoxColumn
             // 
             this.gidDataGridViewTextBoxColumn.DataPropertyName = "G_id";
@@ -536,6 +546,36 @@
             // 
             this.ganresBindingSource.DataSource = typeof(MusicDataEF.Ganres);
             // 
+            // tBCountries
+            // 
+            this.tBCountries.Controls.Add(this.bDCountries);
+            this.tBCountries.Controls.Add(this.bSCountries);
+            this.tBCountries.Controls.Add(this.dGVCountries);
+            this.tBCountries.Location = new System.Drawing.Point(4, 22);
+            this.tBCountries.Name = "tBCountries";
+            this.tBCountries.Size = new System.Drawing.Size(552, 406);
+            this.tBCountries.TabIndex = 5;
+            this.tBCountries.Text = "Countries";
+            this.tBCountries.UseVisualStyleBackColor = true;
+            // 
+            // dGVCountries
+            // 
+            this.dGVCountries.AllowUserToOrderColumns = true;
+            this.dGVCountries.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVCountries.AutoGenerateColumns = false;
+            this.dGVCountries.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVCountries.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cidDataGridViewTextBoxColumn,
+            this.cnameDataGridViewTextBoxColumn,
+            this.artistsDataGridViewTextBoxColumn1});
+            this.dGVCountries.DataSource = this.countriesBindingSource;
+            this.dGVCountries.Location = new System.Drawing.Point(3, 92);
+            this.dGVCountries.Name = "dGVCountries";
+            this.dGVCountries.Size = new System.Drawing.Size(546, 311);
+            this.dGVCountries.TabIndex = 0;
+            // 
             // cidDataGridViewTextBoxColumn
             // 
             this.cidDataGridViewTextBoxColumn.DataPropertyName = "C_id";
@@ -556,6 +596,66 @@
             this.artistsDataGridViewTextBoxColumn1.Name = "artistsDataGridViewTextBoxColumn1";
             this.artistsDataGridViewTextBoxColumn1.Visible = false;
             // 
+            // bSAlbums
+            // 
+            this.bSAlbums.Location = new System.Drawing.Point(3, 53);
+            this.bSAlbums.Name = "bSAlbums";
+            this.bSAlbums.Size = new System.Drawing.Size(75, 23);
+            this.bSAlbums.TabIndex = 1;
+            this.bSAlbums.Text = "Save";
+            this.bSAlbums.UseVisualStyleBackColor = true;
+            this.bSAlbums.Click += new System.EventHandler(this.bSAlbums_Click);
+            // 
+            // bDAlbums
+            // 
+            this.bDAlbums.Location = new System.Drawing.Point(84, 53);
+            this.bDAlbums.Name = "bDAlbums";
+            this.bDAlbums.Size = new System.Drawing.Size(75, 23);
+            this.bDAlbums.TabIndex = 2;
+            this.bDAlbums.Text = "Delete";
+            this.bDAlbums.UseVisualStyleBackColor = true;
+            this.bDAlbums.Click += new System.EventHandler(this.bDAlbums_Click);
+            // 
+            // bSGanres
+            // 
+            this.bSGanres.Location = new System.Drawing.Point(3, 41);
+            this.bSGanres.Name = "bSGanres";
+            this.bSGanres.Size = new System.Drawing.Size(75, 23);
+            this.bSGanres.TabIndex = 1;
+            this.bSGanres.Text = "Save";
+            this.bSGanres.UseVisualStyleBackColor = true;
+            this.bSGanres.Click += new System.EventHandler(this.bSGanres_Click);
+            // 
+            // bDGanres
+            // 
+            this.bDGanres.Location = new System.Drawing.Point(84, 41);
+            this.bDGanres.Name = "bDGanres";
+            this.bDGanres.Size = new System.Drawing.Size(75, 23);
+            this.bDGanres.TabIndex = 2;
+            this.bDGanres.Text = "Delete";
+            this.bDGanres.UseVisualStyleBackColor = true;
+            this.bDGanres.Click += new System.EventHandler(this.bDGanres_Click);
+            // 
+            // bSCountries
+            // 
+            this.bSCountries.Location = new System.Drawing.Point(3, 40);
+            this.bSCountries.Name = "bSCountries";
+            this.bSCountries.Size = new System.Drawing.Size(75, 23);
+            this.bSCountries.TabIndex = 1;
+            this.bSCountries.Text = "Save";
+            this.bSCountries.UseVisualStyleBackColor = true;
+            this.bSCountries.Click += new System.EventHandler(this.bSCountries_Click);
+            // 
+            // bDCountries
+            // 
+            this.bDCountries.Location = new System.Drawing.Point(84, 40);
+            this.bDCountries.Name = "bDCountries";
+            this.bDCountries.Size = new System.Drawing.Size(75, 23);
+            this.bDCountries.TabIndex = 2;
+            this.bDCountries.Text = "Delete";
+            this.bDCountries.UseVisualStyleBackColor = true;
+            this.bDCountries.Click += new System.EventHandler(this.bDCountries_Click);
+            // 
             // MainFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -569,22 +669,22 @@
             this.tCMain.ResumeLayout(false);
             this.tBPlayers.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVPlayers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.musicPlayerBindingSource)).EndInit();
             this.tBArtists.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVArtists)).EndInit();
-            this.tBAlbums.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGVAlbums)).EndInit();
-            this.tBSongs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGVSongs)).EndInit();
-            this.tBGanres.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGVGanres)).EndInit();
-            this.tBCountries.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGVCountries)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicPlayerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.countriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artistsBindingSource)).EndInit();
+            this.tBAlbums.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVAlbums)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.albumsBindingSource)).EndInit();
+            this.tBSongs.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVSongs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.songsBindingSource)).EndInit();
+            this.tBGanres.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVGanres)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ganresBindingSource)).EndInit();
+            this.tBCountries.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVCountries)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -603,14 +703,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mPnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn artistPlayersDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource musicPlayerBindingSource;
-        private System.Windows.Forms.DataGridView dGVArtists;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn anameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn acountryIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource countriesBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn albumsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn artistPlayerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countriesDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource artistsBindingSource;
         private System.Windows.Forms.DataGridView dGVAlbums;
         private System.Windows.Forms.DataGridViewTextBoxColumn aLidDataGridViewTextBoxColumn;
@@ -642,6 +735,21 @@
         private System.Windows.Forms.Button bEPlayers;
         private System.Windows.Forms.Button bDPlayers;
         private System.Windows.Forms.Button bSPlayers;
+        private System.Windows.Forms.Button bDArtists;
+        private System.Windows.Forms.Button bSArtists;
+        private System.Windows.Forms.DataGridView dGVArtists;
+        private System.Windows.Forms.DataGridViewTextBoxColumn aidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn acountryIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn albumsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn artistPlayerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn countriesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button bDAlbums;
+        private System.Windows.Forms.Button bSAlbums;
+        private System.Windows.Forms.Button bDGanres;
+        private System.Windows.Forms.Button bSGanres;
+        private System.Windows.Forms.Button bDCountries;
+        private System.Windows.Forms.Button bSCountries;
     }
 }
 
