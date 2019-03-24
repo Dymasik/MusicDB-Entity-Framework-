@@ -136,13 +136,38 @@ namespace MusicDB_withEF_
                 }
                 else
                 {
-                    artistsBindingSource.RemoveCurrent();
+                    var players = (from c in ctx.ArtistPlayer where (artist.A_id == c.AP_artId) select c).Any();
+
+                    if (players)
+                    {
+                        DialogResult result = MessageBox.Show("Are you sure, you want to delete this artist, you will have no chance to restore data?", "Warning", MessageBoxButtons.YesNo);
+                        if (result == DialogResult.Yes)
+                        {
+                            deleteArtist(artist);
+                        }
+                    }
+                    else
+                    {
+                        artistsBindingSource.RemoveCurrent();
+                    }
                 }
             }
             catch (Exception)
             {
                 MessageBox.Show("Error of deleting", "Error");
             }
+        }
+
+        private void deleteArtist(Artists artist)
+        {
+            var needDelete = (from c in ctx.ArtistPlayer
+                              where c.AP_artId == artist.A_id
+                              select c).ToArray();
+            foreach (var s in needDelete)
+            {
+                ctx.ArtistPlayer.Remove(s);
+            }
+            ctx.Artists.Remove(artist);
         }
 
         private void dGVArtists_DataError(object sender, DataGridViewDataErrorEventArgs anError)
@@ -242,6 +267,65 @@ namespace MusicDB_withEF_
             {
                 MessageBox.Show("Error of deleting information", "Error");
             }
+        }
+
+        private void bSSongs_Click(object sender, EventArgs e)
+        {
+            ctx.SaveChanges();
+        }
+
+        private void bDSongs_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Songs song = (Songs)dGVSongs.CurrentRow.DataBoundItem;
+                var ganres = (from g in ctx.SongGanre where (song.S_id == g.SG_songId) select g).Any();
+
+                if (ganres)
+                {
+                    DialogResult result = MessageBox.Show("Are you sure, you want to delete this song, you will have no chance to restore data?", "Warning", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
+                    {
+                        deleteSong(song);
+                    }
+                }
+                else
+                {
+                    songsBindingSource.RemoveCurrent();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Error of deleting information", "Error");
+            }
+        }
+
+        private void deleteSong(Songs song)
+        {
+            var needDelete = (from c in ctx.SongGanre
+                              where song.S_id == c.SG_songId
+                              select c).ToList();
+            foreach (var s in needDelete)
+            {
+                ctx.SongGanre.Remove(s);
+            }
+            ctx.Songs.Remove(song);
+        }
+
+        private void bESongs_Click(object sender, EventArgs e)
+        {
+            Songs song = (Songs)dGVSongs.CurrentRow.DataBoundItem;
+            EditSong frm = new EditSong(song);
+            frm.ShowDialog(this);
+            frm.Dispose();
+        }
+
+        private void bASongs_Click(object sender, EventArgs e)
+        {
+            AddSongs frm = new AddSongs();
+            frm.ShowDialog(this);
+            frm.Dispose();
+            ctx.Songs.Load();
         }
     }
 }

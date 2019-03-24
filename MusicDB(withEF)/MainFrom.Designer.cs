@@ -52,6 +52,8 @@
             this.bDArtists = new System.Windows.Forms.Button();
             this.bSArtists = new System.Windows.Forms.Button();
             this.tBAlbums = new System.Windows.Forms.TabPage();
+            this.bDAlbums = new System.Windows.Forms.Button();
+            this.bSAlbums = new System.Windows.Forms.Button();
             this.dGVAlbums = new System.Windows.Forms.DataGridView();
             this.aLidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aLnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +63,10 @@
             this.songsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.albumsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tBSongs = new System.Windows.Forms.TabPage();
+            this.bASongs = new System.Windows.Forms.Button();
+            this.bESongs = new System.Windows.Forms.Button();
+            this.bDSongs = new System.Windows.Forms.Button();
+            this.bSSongs = new System.Windows.Forms.Button();
             this.dGVSongs = new System.Windows.Forms.DataGridView();
             this.sidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.snameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +76,8 @@
             this.songGanreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.songsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tBGanres = new System.Windows.Forms.TabPage();
+            this.bDGanres = new System.Windows.Forms.Button();
+            this.bSGanres = new System.Windows.Forms.Button();
             this.dGVGanres = new System.Windows.Forms.DataGridView();
             this.gidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,16 +85,13 @@
             this.songGanreDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ganresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tBCountries = new System.Windows.Forms.TabPage();
+            this.bDCountries = new System.Windows.Forms.Button();
+            this.bSCountries = new System.Windows.Forms.Button();
             this.dGVCountries = new System.Windows.Forms.DataGridView();
             this.cidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.artistsDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bSAlbums = new System.Windows.Forms.Button();
-            this.bDAlbums = new System.Windows.Forms.Button();
-            this.bSGanres = new System.Windows.Forms.Button();
-            this.bDGanres = new System.Windows.Forms.Button();
-            this.bSCountries = new System.Windows.Forms.Button();
-            this.bDCountries = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tCMain.SuspendLayout();
             this.tBPlayers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVPlayers)).BeginInit();
@@ -106,6 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ganresBindingSource)).BeginInit();
             this.tBCountries.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dGVCountries)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tCMain
@@ -335,6 +341,26 @@
             this.tBAlbums.Text = "Albums";
             this.tBAlbums.UseVisualStyleBackColor = true;
             // 
+            // bDAlbums
+            // 
+            this.bDAlbums.Location = new System.Drawing.Point(84, 53);
+            this.bDAlbums.Name = "bDAlbums";
+            this.bDAlbums.Size = new System.Drawing.Size(75, 23);
+            this.bDAlbums.TabIndex = 2;
+            this.bDAlbums.Text = "Delete";
+            this.bDAlbums.UseVisualStyleBackColor = true;
+            this.bDAlbums.Click += new System.EventHandler(this.bDAlbums_Click);
+            // 
+            // bSAlbums
+            // 
+            this.bSAlbums.Location = new System.Drawing.Point(3, 53);
+            this.bSAlbums.Name = "bSAlbums";
+            this.bSAlbums.Size = new System.Drawing.Size(75, 23);
+            this.bSAlbums.TabIndex = 1;
+            this.bSAlbums.Text = "Save";
+            this.bSAlbums.UseVisualStyleBackColor = true;
+            this.bSAlbums.Click += new System.EventHandler(this.bSAlbums_Click);
+            // 
             // dGVAlbums
             // 
             this.dGVAlbums.AllowUserToOrderColumns = true;
@@ -407,6 +433,10 @@
             // 
             // tBSongs
             // 
+            this.tBSongs.Controls.Add(this.bASongs);
+            this.tBSongs.Controls.Add(this.bESongs);
+            this.tBSongs.Controls.Add(this.bDSongs);
+            this.tBSongs.Controls.Add(this.bSSongs);
             this.tBSongs.Controls.Add(this.dGVSongs);
             this.tBSongs.Location = new System.Drawing.Point(4, 22);
             this.tBSongs.Name = "tBSongs";
@@ -414,6 +444,46 @@
             this.tBSongs.TabIndex = 3;
             this.tBSongs.Text = "Songs";
             this.tBSongs.UseVisualStyleBackColor = true;
+            // 
+            // bASongs
+            // 
+            this.bASongs.Location = new System.Drawing.Point(246, 48);
+            this.bASongs.Name = "bASongs";
+            this.bASongs.Size = new System.Drawing.Size(75, 23);
+            this.bASongs.TabIndex = 4;
+            this.bASongs.Text = "Add";
+            this.bASongs.UseVisualStyleBackColor = true;
+            this.bASongs.Click += new System.EventHandler(this.bASongs_Click);
+            // 
+            // bESongs
+            // 
+            this.bESongs.Location = new System.Drawing.Point(165, 48);
+            this.bESongs.Name = "bESongs";
+            this.bESongs.Size = new System.Drawing.Size(75, 23);
+            this.bESongs.TabIndex = 3;
+            this.bESongs.Text = "Edit";
+            this.bESongs.UseVisualStyleBackColor = true;
+            this.bESongs.Click += new System.EventHandler(this.bESongs_Click);
+            // 
+            // bDSongs
+            // 
+            this.bDSongs.Location = new System.Drawing.Point(84, 48);
+            this.bDSongs.Name = "bDSongs";
+            this.bDSongs.Size = new System.Drawing.Size(75, 23);
+            this.bDSongs.TabIndex = 2;
+            this.bDSongs.Text = "Delete";
+            this.bDSongs.UseVisualStyleBackColor = true;
+            this.bDSongs.Click += new System.EventHandler(this.bDSongs_Click);
+            // 
+            // bSSongs
+            // 
+            this.bSSongs.Location = new System.Drawing.Point(3, 48);
+            this.bSSongs.Name = "bSSongs";
+            this.bSSongs.Size = new System.Drawing.Size(75, 23);
+            this.bSSongs.TabIndex = 1;
+            this.bSSongs.Text = "Save";
+            this.bSSongs.UseVisualStyleBackColor = true;
+            this.bSSongs.Click += new System.EventHandler(this.bSSongs_Click);
             // 
             // dGVSongs
             // 
@@ -497,6 +567,26 @@
             this.tBGanres.Text = "Ganres";
             this.tBGanres.UseVisualStyleBackColor = true;
             // 
+            // bDGanres
+            // 
+            this.bDGanres.Location = new System.Drawing.Point(84, 41);
+            this.bDGanres.Name = "bDGanres";
+            this.bDGanres.Size = new System.Drawing.Size(75, 23);
+            this.bDGanres.TabIndex = 2;
+            this.bDGanres.Text = "Delete";
+            this.bDGanres.UseVisualStyleBackColor = true;
+            this.bDGanres.Click += new System.EventHandler(this.bDGanres_Click);
+            // 
+            // bSGanres
+            // 
+            this.bSGanres.Location = new System.Drawing.Point(3, 41);
+            this.bSGanres.Name = "bSGanres";
+            this.bSGanres.Size = new System.Drawing.Size(75, 23);
+            this.bSGanres.TabIndex = 1;
+            this.bSGanres.Text = "Save";
+            this.bSGanres.UseVisualStyleBackColor = true;
+            this.bSGanres.Click += new System.EventHandler(this.bSGanres_Click);
+            // 
             // dGVGanres
             // 
             this.dGVGanres.AllowUserToOrderColumns = true;
@@ -558,6 +648,26 @@
             this.tBCountries.Text = "Countries";
             this.tBCountries.UseVisualStyleBackColor = true;
             // 
+            // bDCountries
+            // 
+            this.bDCountries.Location = new System.Drawing.Point(84, 40);
+            this.bDCountries.Name = "bDCountries";
+            this.bDCountries.Size = new System.Drawing.Size(75, 23);
+            this.bDCountries.TabIndex = 2;
+            this.bDCountries.Text = "Delete";
+            this.bDCountries.UseVisualStyleBackColor = true;
+            this.bDCountries.Click += new System.EventHandler(this.bDCountries_Click);
+            // 
+            // bSCountries
+            // 
+            this.bSCountries.Location = new System.Drawing.Point(3, 40);
+            this.bSCountries.Name = "bSCountries";
+            this.bSCountries.Size = new System.Drawing.Size(75, 23);
+            this.bSCountries.TabIndex = 1;
+            this.bSCountries.Text = "Save";
+            this.bSCountries.UseVisualStyleBackColor = true;
+            this.bSCountries.Click += new System.EventHandler(this.bSCountries_Click);
+            // 
             // dGVCountries
             // 
             this.dGVCountries.AllowUserToOrderColumns = true;
@@ -596,65 +706,20 @@
             this.artistsDataGridViewTextBoxColumn1.Name = "artistsDataGridViewTextBoxColumn1";
             this.artistsDataGridViewTextBoxColumn1.Visible = false;
             // 
-            // bSAlbums
+            // pictureBox1
             // 
-            this.bSAlbums.Location = new System.Drawing.Point(3, 53);
-            this.bSAlbums.Name = "bSAlbums";
-            this.bSAlbums.Size = new System.Drawing.Size(75, 23);
-            this.bSAlbums.TabIndex = 1;
-            this.bSAlbums.Text = "Save";
-            this.bSAlbums.UseVisualStyleBackColor = true;
-            this.bSAlbums.Click += new System.EventHandler(this.bSAlbums_Click);
-            // 
-            // bDAlbums
-            // 
-            this.bDAlbums.Location = new System.Drawing.Point(84, 53);
-            this.bDAlbums.Name = "bDAlbums";
-            this.bDAlbums.Size = new System.Drawing.Size(75, 23);
-            this.bDAlbums.TabIndex = 2;
-            this.bDAlbums.Text = "Delete";
-            this.bDAlbums.UseVisualStyleBackColor = true;
-            this.bDAlbums.Click += new System.EventHandler(this.bDAlbums_Click);
-            // 
-            // bSGanres
-            // 
-            this.bSGanres.Location = new System.Drawing.Point(3, 41);
-            this.bSGanres.Name = "bSGanres";
-            this.bSGanres.Size = new System.Drawing.Size(75, 23);
-            this.bSGanres.TabIndex = 1;
-            this.bSGanres.Text = "Save";
-            this.bSGanres.UseVisualStyleBackColor = true;
-            this.bSGanres.Click += new System.EventHandler(this.bSGanres_Click);
-            // 
-            // bDGanres
-            // 
-            this.bDGanres.Location = new System.Drawing.Point(84, 41);
-            this.bDGanres.Name = "bDGanres";
-            this.bDGanres.Size = new System.Drawing.Size(75, 23);
-            this.bDGanres.TabIndex = 2;
-            this.bDGanres.Text = "Delete";
-            this.bDGanres.UseVisualStyleBackColor = true;
-            this.bDGanres.Click += new System.EventHandler(this.bDGanres_Click);
-            // 
-            // bSCountries
-            // 
-            this.bSCountries.Location = new System.Drawing.Point(3, 40);
-            this.bSCountries.Name = "bSCountries";
-            this.bSCountries.Size = new System.Drawing.Size(75, 23);
-            this.bSCountries.TabIndex = 1;
-            this.bSCountries.Text = "Save";
-            this.bSCountries.UseVisualStyleBackColor = true;
-            this.bSCountries.Click += new System.EventHandler(this.bSCountries_Click);
-            // 
-            // bDCountries
-            // 
-            this.bDCountries.Location = new System.Drawing.Point(84, 40);
-            this.bDCountries.Name = "bDCountries";
-            this.bDCountries.Size = new System.Drawing.Size(75, 23);
-            this.bDCountries.TabIndex = 2;
-            this.bDCountries.Text = "Delete";
-            this.bDCountries.UseVisualStyleBackColor = true;
-            this.bDCountries.Click += new System.EventHandler(this.bDCountries_Click);
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::MusicDB_withEF_.Properties.Resources.music_colour_splash;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(5000, 5000);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(591, 151);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // MainFrom
             // 
@@ -662,6 +727,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.tCMain);
+            this.Controls.Add(this.pictureBox1);
             this.MinimumSize = new System.Drawing.Size(50, 300);
             this.Name = "MainFrom";
             this.Text = "MusicData";
@@ -685,6 +751,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ganresBindingSource)).EndInit();
             this.tBCountries.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dGVCountries)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -750,6 +817,11 @@
         private System.Windows.Forms.Button bSGanres;
         private System.Windows.Forms.Button bDCountries;
         private System.Windows.Forms.Button bSCountries;
+        private System.Windows.Forms.Button bASongs;
+        private System.Windows.Forms.Button bESongs;
+        private System.Windows.Forms.Button bDSongs;
+        private System.Windows.Forms.Button bSSongs;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -60,11 +60,23 @@
     <Compile Include="AddPlayers.Designer.cs">
       <DependentUpon>AddPlayers.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddSongs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSongs.Designer.cs">
+      <DependentUpon>AddSongs.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditPlayer.Designer.cs">
       <DependentUpon>EditPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSong.Designer.cs">
+      <DependentUpon>EditSong.cs</DependentUpon>
     </Compile>
     <Compile Include="MainFrom.cs">
       <SubType>Form</SubType>
@@ -77,8 +89,14 @@
     <EmbeddedResource Include="AddPlayers.resx">
       <DependentUpon>AddPlayers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddSongs.resx">
+      <DependentUpon>AddSongs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditPlayer.resx">
       <DependentUpon>EditPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSong.resx">
+      <DependentUpon>EditSong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrom.resx">
       <DependentUpon>MainFrom.cs</DependentUpon>
@@ -91,6 +109,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\LibraryMDB.MusicPlayer.datasource" />
@@ -99,6 +118,7 @@
     <None Include="Properties\DataSources\MusicDataEF.Artists.datasource" />
     <None Include="Properties\DataSources\MusicDataEF.Countries.datasource" />
     <None Include="Properties\DataSources\MusicDataEF.Ganres.datasource" />
+    <None Include="Properties\DataSources\MusicDataEF.SongGanre.datasource" />
     <None Include="Properties\DataSources\MusicDataEF.Songs.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -118,6 +138,9 @@
       <Project>{5eb86b5e-f246-411b-8ed4-aef4ae6c4524}</Project>
       <Name>MusicDataEF</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\music-colour-splash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

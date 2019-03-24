@@ -19,3 +19,5 @@ C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\bin\Debug\MusicData
 C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.EditPlayer.resources
 C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.AddPlayers.resources
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.EditSong.resources
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.AddSongs.resources
