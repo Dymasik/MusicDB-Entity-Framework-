@@ -40,12 +40,22 @@ namespace MusicDB_withEF_
             this.artistsBindingSource.DataSource = this.ctx.Artists.Local.ToBindingList();
 
             this.dGVEdit.Columns["aPidDataGridViewTextBoxColumn"].Visible = false;
+            dGVEdit.AutoGenerateColumns = false;
             
         }
 
         protected override void OnClosing(CancelEventArgs e)
         {
             base.OnClosing(e);
+            var unsaved = ctx.ChangeTracker.Entries<MusicDataEF.ArtistPlayer>().Where(a => a.State != EntityState.Unchanged).ToList();
+            if (unsaved.Count != 0)
+            {
+                DialogResult result = MessageBox.Show("The data has been not saved yet, do you want to save?", "Warning", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    ctx.SaveChanges();
+                }
+            }
             ctx.Dispose();
         }
 

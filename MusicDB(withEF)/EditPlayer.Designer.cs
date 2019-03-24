@@ -29,13 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dGVEdit = new System.Windows.Forms.DataGridView();
-            this.aPidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aPartIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.artistsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.applayerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.artistsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.musicPlayersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.artistPlayerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bAdd = new System.Windows.Forms.Button();
             this.bDelete = new System.Windows.Forms.Button();
@@ -43,79 +37,21 @@
             this.cBArtist = new System.Windows.Forms.ComboBox();
             this.OK = new System.Windows.Forms.Button();
             this.bSave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dGVEdit)).BeginInit();
+            this.dGVEdit = new System.Windows.Forms.DataGridView();
+            this.aPidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aPartIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.applayerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.artistsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.musicPlayersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.artistsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.artistPlayerBindingSource)).BeginInit();
             this.gB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dGVEdit)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dGVEdit
-            // 
-            this.dGVEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dGVEdit.AutoGenerateColumns = false;
-            this.dGVEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVEdit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.aPidDataGridViewTextBoxColumn,
-            this.aPartIdDataGridViewTextBoxColumn,
-            this.applayerIdDataGridViewTextBoxColumn,
-            this.artistsDataGridViewTextBoxColumn,
-            this.musicPlayersDataGridViewTextBoxColumn});
-            this.dGVEdit.DataSource = this.artistPlayerBindingSource;
-            this.dGVEdit.Location = new System.Drawing.Point(12, 116);
-            this.dGVEdit.Name = "dGVEdit";
-            this.dGVEdit.ReadOnly = true;
-            this.dGVEdit.Size = new System.Drawing.Size(360, 204);
-            this.dGVEdit.TabIndex = 0;
-            // 
-            // aPidDataGridViewTextBoxColumn
-            // 
-            this.aPidDataGridViewTextBoxColumn.DataPropertyName = "AP_id";
-            this.aPidDataGridViewTextBoxColumn.HeaderText = "AP_id";
-            this.aPidDataGridViewTextBoxColumn.Name = "aPidDataGridViewTextBoxColumn";
-            this.aPidDataGridViewTextBoxColumn.ReadOnly = true;
-            this.aPidDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // aPartIdDataGridViewTextBoxColumn
-            // 
-            this.aPartIdDataGridViewTextBoxColumn.DataPropertyName = "AP_artId";
-            this.aPartIdDataGridViewTextBoxColumn.DataSource = this.artistsBindingSource;
-            this.aPartIdDataGridViewTextBoxColumn.DisplayMember = "A_name";
-            this.aPartIdDataGridViewTextBoxColumn.HeaderText = "Artist";
-            this.aPartIdDataGridViewTextBoxColumn.Name = "aPartIdDataGridViewTextBoxColumn";
-            this.aPartIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.aPartIdDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.aPartIdDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.aPartIdDataGridViewTextBoxColumn.ValueMember = "A_id";
             // 
             // artistsBindingSource
             // 
             this.artistsBindingSource.DataSource = typeof(MusicDataEF.Artists);
-            // 
-            // applayerIdDataGridViewTextBoxColumn
-            // 
-            this.applayerIdDataGridViewTextBoxColumn.DataPropertyName = "Ap_playerId";
-            this.applayerIdDataGridViewTextBoxColumn.HeaderText = "Ap_playerId";
-            this.applayerIdDataGridViewTextBoxColumn.Name = "applayerIdDataGridViewTextBoxColumn";
-            this.applayerIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.applayerIdDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // artistsDataGridViewTextBoxColumn
-            // 
-            this.artistsDataGridViewTextBoxColumn.DataPropertyName = "Artists";
-            this.artistsDataGridViewTextBoxColumn.HeaderText = "Artists";
-            this.artistsDataGridViewTextBoxColumn.Name = "artistsDataGridViewTextBoxColumn";
-            this.artistsDataGridViewTextBoxColumn.ReadOnly = true;
-            this.artistsDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // musicPlayersDataGridViewTextBoxColumn
-            // 
-            this.musicPlayersDataGridViewTextBoxColumn.DataPropertyName = "MusicPlayers";
-            this.musicPlayersDataGridViewTextBoxColumn.HeaderText = "MusicPlayers";
-            this.musicPlayersDataGridViewTextBoxColumn.Name = "musicPlayersDataGridViewTextBoxColumn";
-            this.musicPlayersDataGridViewTextBoxColumn.ReadOnly = true;
-            this.musicPlayersDataGridViewTextBoxColumn.Visible = false;
             // 
             // artistPlayerBindingSource
             // 
@@ -183,29 +119,85 @@
             this.bSave.UseVisualStyleBackColor = true;
             this.bSave.Click += new System.EventHandler(this.bSave_Click);
             // 
+            // dGVEdit
+            // 
+            this.dGVEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dGVEdit.AutoGenerateColumns = false;
+            this.dGVEdit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dGVEdit.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.aPidDataGridViewTextBoxColumn,
+            this.aPartIdDataGridViewTextBoxColumn,
+            this.applayerIdDataGridViewTextBoxColumn,
+            this.artistsDataGridViewTextBoxColumn,
+            this.musicPlayersDataGridViewTextBoxColumn});
+            this.dGVEdit.DataSource = this.artistPlayerBindingSource;
+            this.dGVEdit.Location = new System.Drawing.Point(12, 116);
+            this.dGVEdit.Name = "dGVEdit";
+            this.dGVEdit.Size = new System.Drawing.Size(360, 204);
+            this.dGVEdit.TabIndex = 4;
+            // 
+            // aPidDataGridViewTextBoxColumn
+            // 
+            this.aPidDataGridViewTextBoxColumn.DataPropertyName = "AP_id";
+            this.aPidDataGridViewTextBoxColumn.HeaderText = "AP_id";
+            this.aPidDataGridViewTextBoxColumn.Name = "aPidDataGridViewTextBoxColumn";
+            this.aPidDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // aPartIdDataGridViewTextBoxColumn
+            // 
+            this.aPartIdDataGridViewTextBoxColumn.DataPropertyName = "AP_artId";
+            this.aPartIdDataGridViewTextBoxColumn.DataSource = this.artistsBindingSource;
+            this.aPartIdDataGridViewTextBoxColumn.DisplayMember = "A_name";
+            this.aPartIdDataGridViewTextBoxColumn.HeaderText = "AP_artId";
+            this.aPartIdDataGridViewTextBoxColumn.Name = "aPartIdDataGridViewTextBoxColumn";
+            this.aPartIdDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.aPartIdDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.aPartIdDataGridViewTextBoxColumn.ValueMember = "A_id";
+            // 
+            // applayerIdDataGridViewTextBoxColumn
+            // 
+            this.applayerIdDataGridViewTextBoxColumn.DataPropertyName = "Ap_playerId";
+            this.applayerIdDataGridViewTextBoxColumn.HeaderText = "Ap_playerId";
+            this.applayerIdDataGridViewTextBoxColumn.Name = "applayerIdDataGridViewTextBoxColumn";
+            this.applayerIdDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // artistsDataGridViewTextBoxColumn
+            // 
+            this.artistsDataGridViewTextBoxColumn.DataPropertyName = "Artists";
+            this.artistsDataGridViewTextBoxColumn.HeaderText = "Artists";
+            this.artistsDataGridViewTextBoxColumn.Name = "artistsDataGridViewTextBoxColumn";
+            this.artistsDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // musicPlayersDataGridViewTextBoxColumn
+            // 
+            this.musicPlayersDataGridViewTextBoxColumn.DataPropertyName = "MusicPlayers";
+            this.musicPlayersDataGridViewTextBoxColumn.HeaderText = "MusicPlayers";
+            this.musicPlayersDataGridViewTextBoxColumn.Name = "musicPlayersDataGridViewTextBoxColumn";
+            this.musicPlayersDataGridViewTextBoxColumn.Visible = false;
+            // 
             // EditPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.Controls.Add(this.dGVEdit);
             this.Controls.Add(this.bSave);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.gB);
             this.Controls.Add(this.bDelete);
-            this.Controls.Add(this.dGVEdit);
             this.Name = "EditPlayer";
             this.Text = "EditPlayer";
-            ((System.ComponentModel.ISupportInitialize)(this.dGVEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artistsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.artistPlayerBindingSource)).EndInit();
             this.gB.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dGVEdit)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dGVEdit;
         private System.Windows.Forms.BindingSource artistPlayerBindingSource;
         private System.Windows.Forms.BindingSource artistsBindingSource;
         private System.Windows.Forms.Button bAdd;
@@ -213,11 +205,12 @@
         private System.Windows.Forms.GroupBox gB;
         private System.Windows.Forms.ComboBox cBArtist;
         private System.Windows.Forms.Button OK;
+        private System.Windows.Forms.Button bSave;
+        private System.Windows.Forms.DataGridView dGVEdit;
         private System.Windows.Forms.DataGridViewTextBoxColumn aPidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn aPartIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn applayerIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn artistsDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn musicPlayersDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button bSave;
     }
 }
