@@ -21,3 +21,4 @@ C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_w
 C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.AddPlayers.resources
 C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.EditSong.resources
 C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.AddSongs.resources
+C:\Users\Lenovo\source\repos\MusicDB(withEF)\MusicDB(withEF)\obj\Debug\MusicDB_withEF_.SearchForm.resources

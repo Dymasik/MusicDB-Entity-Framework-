@@ -327,5 +327,13 @@ namespace MusicDB_withEF_
             frm.Dispose();
             ctx.Songs.Load();
         }
+
+        private void dGVGanres_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Ganres ganre = (Ganres)dGVGanres.CurrentRow.DataBoundItem;
+            SearchForm frm = new SearchForm(ganre);
+            frm.ShowDialog(this);
+            frm.Dispose();
+        }
     }
 }
